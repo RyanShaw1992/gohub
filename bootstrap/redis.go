@@ -9,7 +9,7 @@ import (
 func SetupRedis() {
 	//建立redis连接
 	redis.ConnectRedis(
-		fmt.Sprintf("%V:%V", config.GetString("redis.host"), config.GetString("redis.port")),
+		fmt.Sprintf("%v:%v", config.GetString("redis.host"), config.GetString("redis.port")),
 		config.GetString("redis.username"),
 		config.GetString("redis.password"),
 		config.GetInt("redis.database"),
